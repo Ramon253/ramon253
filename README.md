@@ -7,13 +7,13 @@ my Higher National Diploma in Web Development.
 
 ## Skills
 <ul>
-- Programming: PHP, Java, JavaScript/TypeScript
-- Frontend: Angular, CSS, Tailwind CSS, Bootstrap, SASS
-- Backend: Laravel, Express, RESTful APIs
-- Databases: MySQL, MongoDB
-- Cloud platforms: AWS, Oracle Cloud
-- Linux: Red Hat and Debian
-- DevOps: Git, CI/CD, Docker, Docker-compose
+<li>Programming: PHP, Java, JavaScript/TypeScript</li>
+<li>Frontend: Angular, CSS, Tailwind CSS, Bootstrap, SASS</li>
+<li>Backend: Laravel, Express, RESTful APIs</li>
+<li>Databases: MySQL, MongoDB</li>
+<li>Cloud platforms: AWS, Oracle Cloud</li>
+<li>Linux: Red Hat and Debian</li>
+<li>DevOps: Git, CI/CD, Docker, Docker-compose</li>
 </ul>
 
 ## Contact
