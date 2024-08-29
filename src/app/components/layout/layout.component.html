@@ -1,3 +1,26 @@
-<h1 >Adios</h1>
-<ng-content/>
-<h1>Hola</h1>
+<div class="flex font-nunito">
+  <header
+
+    class="h-screen min-w-[150px] w-[15vw] bg-mainGrey flex flex-col items-center justify-between pb-10 text-secondary  shadow-main-shadow ">
+    <div class="flex-col flex text-8xl">
+      <span>JR</span>
+      <span>GA</span>
+    </div>
+    <ul class="flex flex-col list-none w-full items-center justify-center gap-2 text-secondaryWhite">
+      <li>Proyectos</li>
+      <li>Sobre mi</li>
+      <li>Titulos</li>
+      <li>Contacto</li>
+    </ul>
+    <button
+
+      class="p-2 rounded-lg border-2 w-10/12 flex items-center font-bold justify-center bg-transparent hover:bg-secondary border-secondary text-secondary hover:text-gray-50 hover:scale-105 shadow transition-all ease-in-out gap-2">
+      <span class="icon-[pepicons--cv] text-2xl"></span>
+      Descargar CV
+    </button>
+  </header>
+  <ng-content/>
+  <footer>
+
+  </footer>
+</div>

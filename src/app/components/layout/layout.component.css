@@ -1,0 +1,3 @@
+.cv > * {
+  @apply fill-secondary stroke-secondary;
+}
