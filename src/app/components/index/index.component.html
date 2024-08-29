@@ -1,8 +1,12 @@
 <div class="w-full max-w-full overflow-x-hidden overflow-y-scroll">
-  <div #screen class="w-full max-w-screen-xl mx-auto items-center justify-center h-screen flex flex-col">
+  <div #screen class="w-full max-w-screen-xl mx-auto items-center justify-center min-h-screen h-screen flex flex-col">
     <div class="w-full h-full flex items-center justify-center">
-      <div class="w-1/2 flex flex-col justify-center gap-10">
-        <h1 class="font-bold text-secondaryWhite text-8xl">Jose Ramón <br> Gallardo</h1>
+      <div class="w-fit startBr:w-1/2 flex flex-col justify-center gap-10 2xl:p-0 pl-20">
+        <div class="flex flex-col gap-2 items-start">
+          <img src="assets/image.png" #profile id="" class="h-36 rounded-full startBr:hidden  aspect-square profile_photo"
+               alt="Profile photo">
+          <h1 class="font-bold text-secondaryWhite text-7xl 2xl:text-8xl ">Jose Ramón <br> Gallardo</h1>
+        </div>
         <h2 class="font-semibold text-secondary text-4xl ">Desarrollador web</h2>
         <p class="font-medium text-mainWhite max-w-[25rem]">Hola 👋, me llamo Ramon y soy un tecnico superior de
           desarrollo
@@ -24,13 +28,14 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2 flex-col items-center justify-center">
-        <img src="assets/image.png" #profile id="profile_photo" class="w-[75%] rounded-full h-auto aspect-square"
+      <div class="w-1/2 flex-col hidden startBr:block items-center justify-center">
+        <img src="assets/image.png" #profile  class="w-[75%] rounded-full profile_photo h-auto aspect-square"
              alt="Profile photo">
       </div>
     </div>
     <div class="w-full flex items-center justify-center p-16">
-      <div class="w-20 rounded-full flex items-center justify-center text-secondary aspect-square  text-6xl bg-mainGrey shadow hover:shadow-xl transition-all ease-in-out hover:scale-110 cursor-pointer group">
+      <div
+        class="w-20 rounded-full flex items-center justify-center text-secondary aspect-square  text-6xl bg-mainGrey shadow hover:shadow-xl transition-all ease-in-out hover:scale-110 cursor-pointer group">
         <span class="icon-[material-symbols--arrow-cool-down-rounded] group-hover:scale-105"></span>
       </div>
     </div>
