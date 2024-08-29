@@ -11,7 +11,7 @@ module.exports = {
         main : '#222321',
         secondary : '#709E64',
         mainWhite: '#CBCBCB',
-        secondaryWhite: '#CBCBCB',
+        secondaryWhite: '#D3E0D0',
       },
       fontFamily: {
         'nunito' : ['Nunito'],
