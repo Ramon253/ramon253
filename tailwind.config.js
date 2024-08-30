@@ -20,7 +20,7 @@ module.exports = {
         'nunito' : ['Nunito'],
       },
       boxShadow : {
-        'main-shadow' : 'rgb(38, 57, 77) 0px 20px 30px -10px;',
+        'main-shadow' : 'rgb(38, 57, 77) 0px 20px 30px -10px',
       }
     },
   },
