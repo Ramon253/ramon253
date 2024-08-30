@@ -1,0 +1,25 @@
+<header
+
+  class="h-screen max-h-[100dvh] min-w-[200px] w-[15vw] bg-mainGrey flex flex-col items-center justify-between pb-10 text-secondary  shadow-main-shadow ">
+  <div class="flex-col flex text-8xl">
+    <span>JR</span>
+    <span>GA</span>
+  </div>
+  <nav class="w-full">
+    <ul class="flex flex-col list-none w-full items-center justify-center text-secondaryWhite">
+      @for (link of navItems; track $index){
+        <li class="p-4 flex items-center justify-center w-full hover:bg-main cursor-pointer group transition-all ease-in-out relative">
+          <a href="/{{link.link}}">{{link.name}}</a>
+          <div class="w-[3px] h-[90%] bg-secondaryWhite group-hover:flex hidden transition-all duration-300 ease-in-out absolute right-0 "></div>
+        </li>
+      }
+    </ul>
+  </nav>
+  <a
+    href="assets/CV.pdf"
+    download="Curriculum Vitae.pdf"
+    class="p-2 rounded-lg border-2 w-10/12 flex items-center font-bold justify-center bg-transparent hover:bg-secondary border-secondary text-secondary hover:text-gray-50 hover:scale-105 transition-all ease-in-out gap-2">
+    <span class="icon-[pepicons--cv] text-2xl"></span>
+    Descargar CV
+  </a>
+</header>
