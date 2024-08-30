@@ -5,11 +5,11 @@
 
   </footer>
 </div>
-<button (click)="toggleNav()" class="w-14 md:hidden aspect-square rounded-lg bg-mainGrey flex flex-wrap p-3 fixed top-3 left-3 items-center justify-between z-50 overflow-x-hidden">
+<button #button (click)="toggleNav()" class="w-14 {{isOpened()? 'bg-transparent' : 'bg-mainGrey'}} md:hidden aspect-square rounded-lg  flex flex-wrap p-3 fixed top-3 left-3 items-center justify-between z-50 overflow-x-hidden">
   <div #btnLine id="line1" class="w-full h-[3px] bg-mainWhite transition-all ease-in-out"></div>
   <div #btnLine class="w-full h-[3px] bg-mainWhite transition-all ease-in-out"></div>
   <div #btnLine id="line2" class="w-full h-[3px] bg-mainWhite transition-all ease-in-out"></div>
 </button>
-<div #mobileNav class="fixed top-0 left-0 z-40 transition-all ease-in-out -translate-x-full">
+<div #mobileNav class="fixed top-0 left-0 z-40 max-h-[100dvh] transition-all ease-in-out -translate-x-full">
   <app-nav-bar ></app-nav-bar>
 </div>

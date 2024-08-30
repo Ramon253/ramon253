@@ -12,6 +12,7 @@ import {NavBarComponent} from "../nav-bar/nav-bar.component";
 })
 export class LayoutComponent {
   mobileNav = viewChild<ElementRef>('mobileNav');
+  navButton = viewChild<ElementRef>('button');
   navBtn = viewChildren<ElementRef>('btnLine');
   isOpened = signal<boolean>(false);
 
@@ -30,6 +31,7 @@ export class LayoutComponent {
       this.renderer.setStyle(this.navBtn()?.at(1)?.nativeElement, 'transform', 'translateX(200%)');
       return
     }
+    this.renderer.setStyle(this.navButton()?.nativeElement, 'transform', 'scaleX(100%)');
     this.renderer.setStyle(this.navBtn()?.at(0)?.nativeElement, 'transform', 'rotate(0deg)');
     this.renderer.setStyle(this.navBtn()?.at(2)?.nativeElement, 'transform', 'rotate(0deg)');
     this.renderer.setStyle(this.navBtn()?.at(1)?.nativeElement, 'transform', 'translateX(0)');
